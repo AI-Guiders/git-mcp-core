@@ -19,11 +19,7 @@ Shared construction of `git` CLI argument lists for **git-mcp** and **Cascade ID
 
 ## Публикация на nuget.org (Trusted Publishing)
 
-**Полный чеклист** (пуш на GitHub, форма на nuget.org, первый запуск workflow): **[docs/nuget-trusted-publishing.md](docs/nuget-trusted-publishing.md)**.
-
-Кратко:
-
-1. В репозитории **https://github.com/KarataevDmitry/git-mcp-core** в ветке по умолчанию должны лежать **`.github/workflows/nuget-publish.yml`** и **`LICENSE`** (OIDC `id-token: write` в publish-workflow).
+Инструкция NuGet: [Trusted Publishing — GitHub Actions](https://learn.microsoft.com/nuget/nuget-org/trusted-publishing#github-actions-setup). В форме: owner **`KarataevDmitry`**, repository **`git-mcp-core`**, workflow file **`nuget-publish.yml`** (только имя файла). Workflow в репо: **`.github/workflows/nuget-publish.yml`**; запуск — тег **`v*`** или **Actions → Publish to NuGet → workflow_dispatch**.
 
 ## Build
 
