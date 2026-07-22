@@ -194,6 +194,17 @@ public static class GitCommandBuilder
 
     public static GitArgsResult SubmoduleStatus() => GitArgsResult.Ok(["submodule", "status"]);
 
+    /// <summary>Porcelain for SCM scene counts (paths not returned to agent by default).</summary>
+    public static IReadOnlyList<string> StatusPorcelain() => ["status", "--porcelain=v1"];
+
+    public static IReadOnlyList<string> RevParseAbbrevHead() => ["rev-parse", "--abbrev-ref", "HEAD"];
+
+    public static IReadOnlyList<string> RevParseAbbrevUpstream() => ["rev-parse", "--abbrev-ref", "@{upstream}"];
+
+    /// <summary>Ahead (left) / behind (right) vs upstream.</summary>
+    public static IReadOnlyList<string> AheadBehindUpstream() =>
+        ["rev-list", "--left-right", "--count", "HEAD...@{upstream}"];
+
     public static GitArgsResult SubmoduleUpdate(bool recursive, string? path)
     {
         var list = new List<string> { "submodule", "update", "--init" };
