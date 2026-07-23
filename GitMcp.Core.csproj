@@ -9,7 +9,7 @@
     <AssemblyName>GitMcp.Core</AssemblyName>
     <!-- NuGet package id; Trusted Publishing привязывай к репо https://github.com/KarataevDmitry/git-mcp-core -->
     <PackageId>AIGuiders.GitMcp.Core</PackageId>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
     <Authors>Dmitry Karataev; AIGuiders</Authors>
     <Company>AIGuiders</Company>
     <Description>Shared git CLI argv builders for git-mcp and Cascade IDE (ADR 0019). No MCP/Avalonia dependency.</Description>

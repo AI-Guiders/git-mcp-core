@@ -31,6 +31,20 @@ public static class GitCommandBuilder
         return list;
     }
 
+    /// <summary>Per-file add/del counts for diff scene list mode.</summary>
+    public static IReadOnlyList<string> DiffNumstat(bool staged, string? path = null)
+    {
+        var list = new List<string> { "diff", "--numstat" };
+        if (staged)
+            list.Add("--staged");
+        if (!string.IsNullOrWhiteSpace(path))
+        {
+            list.Add("--");
+            list.Add(path.Trim());
+        }
+        return list;
+    }
+
     /// <summary>
     /// Список изменённых путей (name-only) для preflight-классификации шума.
     /// </summary>
