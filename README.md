@@ -4,8 +4,8 @@ Shared construction of `git` CLI argument lists for **git-mcp** and **Cascade ID
 
 ## Remotes (политика)
 
-- **`origin`** — GitLab (`Krawler/git-mcp-core`), канон для разработки и субмодуля в meta-repo `open`.
-- **`github`** — зеркало на GitHub: **[KarataevDmitry/git-mcp-core](https://github.com/KarataevDmitry/git-mcp-core)** (`git push github main` после согласования с GitLab). Отсюда же **Trusted Publishing** пакета `AIGuiders.GitMcp.Core` на nuget.org.
+- **`origin`** — [AI-Guiders/git-mcp-core](https://github.com/AI-Guiders/git-mcp-core) на GitHub (канон для субмодуля в meta-repo `open`).
+- **`github`** — личное зеркало **[KarataevDmitry/git-mcp-core](https://github.com/KarataevDmitry/git-mcp-core)** при необходимости. **Trusted Publishing** пакета `AIGuiders.GitMcp.Core` на nuget.org.
 
 ## Layout
 
